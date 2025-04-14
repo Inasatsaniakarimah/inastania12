@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas</title>
+</head>
+<body>
+  <form onsubmit="return false">   
+    <input type="text" id="nama">
+    <label for="nama">Masukan Nama</label>
+    <input type="number" id="index">
+    <label for="index">Masukan Index</label>
+    <button onclick="cek_index()">cek index</button>
+  </form>
+  <div id="hasil"></div>
+  <div id="nama"></div>
+  <script>
+    function cek_index() {
+      let index = document.getElementById('index').value
+      let nama = document.getElementById('nama').value
+
+      if (index >=90) {
+        document.getElementById('hasil').innerHTML = 'maka '+ nama + ' indexnya A'
+      }else if (index >=80) {
+        document.getElementById('hasil').innerHTML = 'maka '+ nama + ' indexnya B'
+      }else if (index >=70) {
+        document.getElementById('hasil').innerHTML = 'maka '+ nama + ' indexnya C'
+      }else if (index >=60) {
+        document.getElementById('hasil').innerHTML = 'maka ' + nama + ' indexnya D'
+      }else {
+        document.getElementById('hasil').innerHTML = 'maka ' + nama + ' indexnya E'
+        
+      }
+        
+    }
+
+
+
+
+
+    
+  </script>
+  
+</body>
+</html>
